@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7a8cf">
+<meta name="description" content="Beauty of Saii — a pink, pretty Second Life creator space. Follow the journey, browse looks, and connect.">
+<title>Beauty of Saii ♡</title>
+<style>
+:root{--pink:#f6a6cc;--hot:#c94e87;--blush:#fff0f7;--rose:#8c315b;--ink:#28131f;--white:#fffafd;--line:#f0b8d4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--blush);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:14px clamp(18px,5vw,70px);background:rgba(255,240,247,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(1.6rem,3vw,2.4rem);color:var(--rose);text-decoration:none;white-space:nowrap}.nav{display:flex;gap:clamp(10px,2vw,28px);align-items:center;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}.nav a:hover{color:var(--hot)}
+.hero{min-height:590px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:2rem;padding:clamp(34px,7vw,90px);overflow:hidden;position:relative;background:radial-gradient(ellipse at 80% 30%,#f7c3dd 0,transparent 35%),linear-gradient(135deg,#311522,#5d203d 55%,#a63e70);color:white}
+.hero:before{content:"♡  ✦  ♡  ✧  ♡";position:absolute;right:5%;top:8%;font-size:clamp(2rem,5vw,4rem);color:#ffcce4;opacity:.7;letter-spacing:.3em}
+.eyebrow{font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;color:#ffc7e0;font-weight:700}.hero h1{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(4rem,10vw,8.5rem);font-weight:400;line-height:.86;margin:18px 0}.hero h1 span{display:block;font-family:Georgia,serif;font-size:.75em;letter-spacing:.13em;font-weight:700}.hero p{font-family:Georgia,serif;font-size:1.15rem;line-height:1.7;max-width:520px;color:#ffeaf4}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;padding:14px 20px;border-radius:999px;background:linear-gradient(135deg,#ffd9eb,#e977ae);color:#45152c;font-weight:800;font-size:.85rem;letter-spacing:.06em;border:1px solid #ffd9eb;box-shadow:0 8px 22px #16061155;transition:transform .2s}.btn:hover{transform:translateY(-3px)}.btn.secondary{background:transparent;color:white;border-color:#f9c4df;box-shadow:none}
+.hero-art{position:relative;min-height:360px;display:grid;place-items:center}.portrait{width:min(100%,370px);aspect-ratio:4/5;border:7px solid #f8c6df;border-radius:48% 48% 24px 24px;background:#8b315e;box-shadow:18px 20px 0 #f0a1c9;position:relative;overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}.portrait:before{content:"✧";position:absolute;top:8%;right:8%;font-size:3rem;color:#fff0f8;z-index:1;text-shadow:0 2px 8px #54132f}.portrait .monogram{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(3rem,6vw,5rem);color:#ffe1ef;text-shadow:0 4px 22px #ff86bd}.portrait small{letter-spacing:.2em;text-transform:uppercase;color:#ffd8e9}.sticker{position:absolute;background:#ffe6f2;color:#9c3e6a;border:1px solid white;box-shadow:0 5px 15px #17071255;padding:12px 17px;transform:rotate(-9deg);font-family:"Brush Script MT","Segoe Script",cursive;font-size:1.35rem}.sticker.one{left:-2%;bottom:12%}.sticker.two{right:-4%;top:18%;transform:rotate(8deg)}
+section{padding:76px clamp(20px,6vw,90px)}.section-heading{text-align:center;margin-bottom:34px}.section-heading .eyebrow{color:var(--hot)}h2{font-family:"Brush Script MT","Segoe Script",cursive;font-size:clamp(2.8rem,6vw,4.5rem);font-weight:400;color:var(--rose);margin:8px 0}.section-heading p{max-width:600px;margin:0 auto;color:#765367;line-height:1.7}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.tile{min-height:200px;border-radius:22px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;color:white;position:relative;overflow:hidden;border:1px solid #fff;box-shadow:0 10px 24px #8e3b6318;transition:transform .2s}.tile:hover{transform:translateY(-5px)}.tile:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#ffdbec,#db76aa 45%,#5b1e3d);z-index:0}.tile:nth-child(2):before{background:linear-gradient(145deg,#ffd5e9,#bd5b8d 45%,#3b1a2c)}.tile:nth-child(3):before{background:linear-gradient(145deg,#ffbfdc,#a33e70 45%,#29121e)}.tile:nth-child(4):before{background:linear-gradient(145deg,#ffe5f1,#cf6c9e 45%,#6d2447)}.tile:after{content:"✧  ♡  ✦";position:absolute;top:18px;right:18px;font-size:1.5rem;color:#ffe7f3;opacity:.85}.tile>*{position:relative;z-index:1}.tile h3{font-family:"Brush Script MT","Segoe Script",cursive;font-size:2.3rem;font-weight:400;margin:0}.tile span{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;margin-top:5px}
+.photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:1000px;margin:0 auto}.photo-gallery figure{margin:0;border:7px solid white;border-radius:24px;overflow:hidden;background:white;box-shadow:0 12px 30px #8c315b1c}.photo-gallery img{display:block;width:100%;height:clamp(260px,42vw,500px);object-fit:cover}.photo-gallery figcaption{padding:13px 16px;color:#8d3b65;font-family:"Brush Script MT","Segoe Script",cursive;font-size:1.5rem;background:#fff7fb}.about{background:linear-gradient(135deg,#ffeaf4,#ffd2e6)}.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(25px,6vw,75px);max-width:1100px;margin:auto}.about-card{background:#fff9fc;border:1px solid white;border-radius:28px;padding:clamp(24px,4vw,45px);box-shadow:0 16px 45px #8c315b14}.about-card p{line-height:1.85;color:#674357}.quote{font-family:"Brush Script MT","Segoe Script",cursive;font-size:2rem;color:var(--hot)}.badge-cloud{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.badge-cloud span{border:1px solid #ed9fc4;background:white;color:#97466c;border-radius:99px;padding:8px 12px;font-size:.75rem}
+.socials{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:850px;margin:auto}.social-card{display:flex;align-items:center;gap:18px;padding:22px;border-radius:20px;background:white;border:1px solid #f2c2d9;text-decoration:none;box-shadow:0 8px 24px #8c315b10}.social-icon{width:55px;height:55px;border-radius:18px;background:linear-gradient(135deg,#f9b8d7,#d15e98);display:grid;place-items:center;color:white;font-size:1.5rem;flex-shrink:0}.social-card strong{display:block;color:var(--rose);margin-bottom:5px}.social-card small{color:#8a667a}.social-card .arrow{margin-left:auto;color:var(--hot);font-size:1.5rem}
+.note{text-align:center;font-size:.8rem;color:#8c6b7d;margin-top:25px}
+footer{background:#26131f;color:#ffdcec;padding:28px clamp(20px,6vw,90px);display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer-brand{font-family:"Brush Script MT","Segoe Script",cursive;font-size:2rem}footer small{color:#d6a8bf;letter-spacing:.08em}
+@media(max-width:850px){.hero{grid-template-columns:1fr;text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.hero-art{min-height:300px}.portrait{max-width:300px}.tiles{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.nav{justify-content:flex-end}.topbar{align-items:flex-start}.nav a{font-size:.65rem}}
+@media(max-width:520px){.topbar{display:block}.brand{display:block;margin-bottom:10px}.nav{justify-content:flex-start;gap:12px}.hero{padding:50px 22px}.tiles,.socials{grid-template-columns:1fr}.tile{min-height:155px}section{padding:54px 20px}.hero-art{min-height:280px}.sticker.one{left:0}.sticker.two{right:0}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home">Beauty of Saii ♡</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#gallery">Looks</a><a href="#connect">Connect</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">Second Life creator · digital it girl</div>
+    <h1>Beauty of <span>S A I I ♡</span></h1>
+    <p>Pretty faces, bigger dreams. Welcome to my little pink corner of Second Life — a place for my looks, my creativity, and everything I’m creating along the way. ♡</p>
+    <div class="actions">
+      <a class="btn" href="https://www.instagram.com/beautyofsaii/" target="_blank" rel="noopener noreferrer">♡ Follow on Instagram ↗</a>
+      <a class="btn secondary" href="https://onlysl.net/creators/5dffa67b-86fb-4e9e-98bf-6e2e287873a8" target="_blank" rel="noopener noreferrer">♡ Visit my OnlySL ↗</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-label="Decorative Beauty of Saii brand artwork">
+    <div class="portrait"><img src="images/saii-look-1.png" alt="Saii wearing a pink look in Second Life"></div>
+    <div class="sticker one">pretty in pink ♡</div><div class="sticker two">it girl energy ✧</div>
+  </div>
+</section>
+<section id="gallery">
+  <div class="section-heading"><div class="eyebrow">A little bit of everything</div><h2>Explore My World ♡</h2><p>Tap a card to visit my pages. Here are two of my favorite Second Life looks. More pictures can be added whenever you want.</p></div>
+  <div class="tiles">
+    <a class="tile" href="#about"><h3>About Saii</h3><span>Get to know me ↗</span></a>
+    <a class="tile" href="https://www.instagram.com/beautyofsaii/" target="_blank" rel="noopener noreferrer"><h3>My Looks</h3><span>Pictures & style ↗</span></a>
+    <a class="tile" href="https://onlysl.net/creators/5dffa67b-86fb-4e9e-98bf-6e2e287873a8" target="_blank" rel="noopener noreferrer"><h3>OnlySL ♡</h3><span>Visit my profile ↗</span></a>
+    <a class="tile" href="#connect"><h3>Stay Connected</h3><span>Find my socials ↗</span></a>
+  </div>
+  <div style="height:34px"></div>
+  <div class="photo-gallery">
+    <figure><img src="images/saii-look-1.png" alt="Saii in a pink outfit and sunglasses in a city setting"><figcaption>Pretty in pink ♡</figcaption></figure>
+    <figure><img src="images/saii-look-2.png" alt="Saii posing on a staircase in a pink outfit"><figcaption>Serving looks, always ✧</figcaption></figure>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="about-grid">
+    <div><div class="eyebrow">Meet the creator</div><h2>Hey, it’s Saii ♡</h2><p style="line-height:1.9;color:#674357">Welcome to Beauty of Saii! I’m a Second Life creator sharing my avatar looks, personal style, and creative journey. This space is all about self-expression, pretty details, and building my own little world — one look at a time. ♡</p><div class="badge-cloud"><span>♡ Second Life</span><span>✧ Avatar looks</span><span>🎀 Pink aesthetic</span><span>♡ Creator journey</span></div></div>
+    <div class="about-card"><div class="quote">“Pretty faces, bigger dreams.”</div><p>This website is my home base. Follow along for new looks, updates, and more of my world. Thank you for being here and showing love. ♡</p><a class="btn" href="https://www.instagram.com/beautyofsaii/" target="_blank" rel="noopener noreferrer">Come say hi ↗</a></div>
+  </div>
+</section>
+<section id="connect">
+  <div class="section-heading"><div class="eyebrow">Don't be a stranger</div><h2>Stay Connected ♡</h2><p>Follow my pages for new content, updates, and more from Beauty of Saii.</p></div>
+  <div class="socials">
+    <a class="social-card" href="https://www.instagram.com/beautyofsaii/" target="_blank" rel="noopener noreferrer"><div class="social-icon">◎</div><div><strong>Instagram</strong><small>@beautyofsaii</small></div><span class="arrow">↗</span></a>
+    <a class="social-card" href="https://onlysl.net/creators/5dffa67b-86fb-4e9e-98bf-6e2e287873a8" target="_blank" rel="noopener noreferrer"><div class="social-icon">♡</div><div><strong>OnlySL</strong><small>Visit my creator profile</small></div><span class="arrow">↗</span></a>
+  </div>
+  <p class="note">More links, a real photo gallery, and a shop section can be added whenever you're ready. ♡</p>
+</section>
+</main>
+<footer><div class="footer-brand">Beauty of Saii ♡</div><small>© 2026 BEAUTY OF SAII · SECOND LIFE CREATOR · PRETTY FACES, BIGGER DREAMS ♡</small><a href="#home" style="color:#ffdcec;text-decoration:none">Back to top ↑</a></footer>
+</body>
+</html>
